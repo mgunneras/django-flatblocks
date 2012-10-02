@@ -11,7 +11,7 @@ class Migration(SchemaMigration):
         # Adding model 'FlatBlock'
         db.create_table('flatblocks_flatblock', (
             ('id', self.gf('django.db.models.fields.AutoField')(primary_key=True)),
-            ('slug', self.gf('django.db.models.fields.CharField')(unique=True, max_length=255)),
+            ('slug', self.gf('django.db.models.fields.CharField')(unique=True, max_length=191)),
             ('header', self.gf('django.db.models.fields.CharField')(max_length=255, null=True, blank=True)),
             ('content', self.gf('django.db.models.fields.TextField')(null=True, blank=True)),
         ))
@@ -30,7 +30,7 @@ class Migration(SchemaMigration):
             'content': ('django.db.models.fields.TextField', [], {'null': 'True', 'blank': 'True'}),
             'header': ('django.db.models.fields.CharField', [], {'max_length': '255', 'null': 'True', 'blank': 'True'}),
             'id': ('django.db.models.fields.AutoField', [], {'primary_key': 'True'}),
-            'slug': ('django.db.models.fields.CharField', [], {'unique': 'True', 'max_length': '255'})
+            'slug': ('django.db.models.fields.CharField', [], {'unique': 'True', 'max_length': '191'})
         }
     }
 
