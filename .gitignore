@@ -2,6 +2,7 @@
 *.bak
 *.db
 .*.swp
+*.un~
 ._*
 README.html
 local_settings.py
